@@ -83,8 +83,8 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#">Pages</a>
                     <ul class="dropdown">
-                      <li><a href="index.html">- Home</a></li>
-                      <li><a href="about.html">- About Us</a></li>
+                      <li><a href="{% url 'home' %}">- Home</a></li>
+                      <li><a href="{% url 'about' %}">- About Us</a></li>
                       <li><a href="service.html">- Service</a></li>
                       <li><a href="pricing.html">- Pricing</a></li>
                       <li><a href="blog.html">- Blog</a></li>
@@ -132,7 +132,7 @@
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -168,7 +168,7 @@
             <!-- Blog Thumbnail -->
             <div class="blog-thumbnail">
               <a href="./blog-details.html">
-                <img src="./img/bg-img/16.jpg" alt="">
+                <img src="{% static 'website/img/bg-img/16.jpg' %}" alt="">
               </a>
             </div>
             <!-- Blog Content -->
@@ -187,7 +187,7 @@
             <!-- Blog Thumbnail -->
             <div class="blog-thumbnail">
               <a href="./blog-details.html">
-                <img src="./img/bg-img/17.jpg" alt="">
+                <img src="{% static 'website/img/bg-img/17.jpg' %}" alt="">
               </a>
             </div>
             <!-- Blog Content -->
@@ -206,7 +206,7 @@
             <!-- Blog Thumbnail -->
             <div class="blog-thumbnail">
               <a href="./blog-details.html">
-                <img src="./img/bg-img/18.jpg" alt="">
+                <img src="{% static 'website/img/bg-img/18.jpg' %}" alt="">
               </a>
             </div>
             <!-- Blog Content -->
