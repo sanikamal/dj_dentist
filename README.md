@@ -1,0 +1,1 @@
+# Detnal Website with Django
